@@ -1,9 +1,83 @@
+<!DOCTYPE html>
+
 <html>
     <head>
         <title>Google</title>
     </head>
 
+    <style>
+        #logo-share{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #buttons {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        #logo{
+            display: block;
+            margin: auto;
+        }
+
+        #share-btn{
+            display: block;
+            margin: auto;
+        }
+
+        #search-bar{
+            display: block;
+            margin: auto;
+            }
+
+        #search-btn{
+            display: block;
+            margin: auto;
+        }
+        #lucky-btn{
+            display: block;
+            margin: auto;
+        }
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            /*padding: 0;*/
+        }
+
+        li {
+            display: inline;
+        }
+    </style>
+
     <body>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <div id="nav-bar">
+            <ul>
+                <li><a href=#>About</a></li>
+                <li><a href=#>Store</a></li>
+                <li style="float:right"><a class="active" href=#>Gmail</a></li>
+                <li style="float:right"><a class="active" href=#>Images</a></li>
+            </ul>
+        </div>
+
+
+
+        <div id="logo-share">
+            <img src="googlelogo_color_272x92dp.png" id="logo">
+            <a href="https://www.google.com/#ddle=1"><img src="index.png" alt = "Share" id="share-btn"></a>
+        </div>
+        
+        <div id="form-container">
+            <form action= >
+                <input type="text" id="search-bar">        
+                <div id="buttons">
+                    <button type="submit" id="search-btn">Google Search </button>
+                    <button type="submit" id="lucky-btn">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </div>
+        
     </body>
 </html>

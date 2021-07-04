@@ -2,82 +2,142 @@
 
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Google</title>
     </head>
 
     <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links1{
+            padding: 0;
+        }
+
+        .nav-links1 li {
+            display: inline-block;
+        }
+
+        .nav-links2 li{
+            margin-right: auto;
+            list-style: none;
+            display: inline-block;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        
         #logo-share{
             display: flex;
+            justify-content: center;
             flex-direction: row;
+            align-items: flex-end;
+            margin-top: 150px;
         }
         
         #buttons {
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-direction: row;
-        }
-
-        #logo{
-            display: block;
-            margin: auto;
-        }
-
-        #share-btn{
-            display: block;
-            margin: auto;
         }
 
         #search-bar{
             display: block;
-            margin: auto;
+            margin: 25px auto 25px auto;
             }
-
-        #search-btn{
-            display: block;
-            margin: auto;
-        }
-        #lucky-btn{
-            display: block;
-            margin: auto;
-        }
-
-        ul{
-            list-style-type: none;
-            margin: 0;
-            /*padding: 0;*/
+        
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            left: 0px; /*why is this not auto aligned?*/
+            background-color: rgb(224, 224, 224);
+    
         }
 
-        li {
-            display: inline;
+        .footlinks{
+            list-style:none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
         }
+
+        #carbon{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+}
+    
     </style>
 
     <body>
-        <div id="nav-bar">
-            <ul>
-                <li><a href=#>About</a></li>
-                <li><a href=#>Store</a></li>
-                <li style="float:right"><a class="active" href=#>Gmail</a></li>
-                <li style="float:right"><a class="active" href=#>Images</a></li>
+        <header>
+            
+            <ul class="nav-links1">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
             </ul>
+
+            <ul class="nav-links2">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="-apps_90405.png" width="25" height="25"></a></li>
+                <li><a href="#"><img src="index.png"></a></li>
+            </ul>
+            
+            
+            
+        </header>
+            
+
+        <div id="centerblock">
+
+            <div id="logo-share">
+                <a href="#"><img src="googlelogo_color_272x92dp.png" id="logo"></a>
+                <a href="#"><img src="index.png" alt = "Share" id="share-btn"></a>
+            </div>
+            
+            <div id="form-container">
+                <form action= >
+                    <input type="text" id="search-bar">        
+                    <div id="buttons">
+                        <button type="submit">Google Search </button>
+                        <button type="submit">I'm Feeling Lucky</button>
+                    </div>
+                </form>
+            </div>
+
         </div>
 
-
-
-        <div id="logo-share">
-            <img src="googlelogo_color_272x92dp.png" id="logo">
-            <a href="https://www.google.com/#ddle=1"><img src="index.png" alt = "Share" id="share-btn"></a>
-        </div>
-        
-        <div id="form-container">
-            <form action= >
-                <input type="text" id="search-bar">        
-                <div id="buttons">
-                    <button type="submit" id="search-btn">Google Search </button>
-                    <button type="submit" id="lucky-btn">I'm Feeling Lucky</button>
-                </div>
-            </form>
-        </div>
+        <footer id="footer">
+             <ul class= "footlinks">
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search works</a></li>
+                <li id="carbon"><img src="leaf.png" width="18" height="18"><p>Carbon neutral since 2007</p></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </footer>
         
     </body>
 </html>
